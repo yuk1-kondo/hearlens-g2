@@ -1,0 +1,24 @@
+{
+  "package_id": "com.yukik.hearlens",
+  "edition": "202601",
+  "name": "HearLens",
+  "version": "0.1.0",
+  "min_sdk_version": "0.0.16",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "g2-microphone",
+      "desc": "Uses the glasses microphones to show live captions and sound direction/level for the wearer."
+    },
+    {
+      "name": "phone-microphone",
+      "desc": "Optional: uses the phone microphone instead of the glasses microphones (closer to the speaker)."
+    },
+    {
+      "name": "network",
+      "desc": "Optional: sends audio to a speech-to-text endpoint you configure for live captions.",
+      "whitelist": []
+    }
+  ],
+  "supported_languages": ["en", "ja"]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>HearLens</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #232323;
+        color: #E5E5E5;
+        font: 14px/1.4 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        touch-action: manipulation;
+        -webkit-text-size-adjust: 100%;
+        overscroll-behavior: none;
+      }
+      #app {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow-y: auto;
+      }
+      #app h1 { font-size: 18px; font-weight: 600; margin: 0 0 4px; }
+      #app .sub { color: #919191; font-size: 13px; margin: 0 0 16px; }
+      #app fieldset { border: 1px solid #3a3a3a; border-radius: 8px; margin: 0 0 12px; padding: 10px 12px; }
+      #app legend { color: #919191; font-size: 12px; padding: 0 6px; }
+      #app label { display: block; font-size: 13px; color: #bbb; margin: 8px 0 4px; }
+      #app select, #app input {
+        width: 100%; box-sizing: border-box; padding: 8px;
+        background: #2c2c2c; color: #e5e5e5; border: 1px solid #444;
+        border-radius: 6px; font-size: 14px;
+      }
+      #app input[type="password"] { letter-spacing: 1px; }
+      #app button {
+        padding: 10px 16px; border-radius: 8px; border: 1px solid #555;
+        background: #3a3a3a; color: #fff; font-size: 14px; cursor: pointer;
+      }
+      #app button.primary { background: #2f6feb; border-color: #2f6feb; }
+      #app .row { display: flex; gap: 8px; align-items: center; }
+      #app .hint { color: #777; font-size: 12px; margin-top: 6px; }
+      #log {
+        font: 12px/1.5 ui-monospace, Menlo, monospace; white-space: pre-wrap;
+        color: #9a9a9a; background: #1c1c1c; border-radius: 8px;
+        padding: 10px 12px; max-height: 220px; overflow-y: auto;
+      }
+      #log .cap { color: #e5e5e5; }
+    </style>
+  </head>
+  <body>
+    <div id="app">HearLens is running. Check the glasses display.</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
